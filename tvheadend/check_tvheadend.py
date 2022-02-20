@@ -172,7 +172,7 @@ for input_object in inputs:
     else:
         details_string = ""
 
-    check_name = check_name.format(tuner=tuner_name)
+    formatted_check_name = check_name.format(tuner=tuner_name)
     performance_data_string = "|".join(performance_data_string)
 
-    print(f"{state} {check_name} {performance_data_string} {active_stream} {details_string}")
+    print(f"{state} {formatted_check_name} {performance_data_string} {active_stream} {details_string}")
